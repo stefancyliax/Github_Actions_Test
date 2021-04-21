@@ -27,4 +27,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: print README
-        run: cat README.md
+        run: cat *.md
