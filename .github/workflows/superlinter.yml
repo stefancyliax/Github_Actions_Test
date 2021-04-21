@@ -27,7 +27,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: show related files
-        run: ls -la
+        run: ls -la *
 
       - name: print README
         run: cat *.md
