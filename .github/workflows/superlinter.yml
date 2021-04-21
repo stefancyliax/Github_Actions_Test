@@ -26,5 +26,8 @@ jobs:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: show related files
+        run: ls -la
+        
       - name: print README
         run: cat *.md
