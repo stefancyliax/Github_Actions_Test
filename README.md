@@ -2,5 +2,5 @@
 Just a simple test of github actions.
 
 
-## Heading - this should cause linting error
+### Heading - this should cause linting error
 
