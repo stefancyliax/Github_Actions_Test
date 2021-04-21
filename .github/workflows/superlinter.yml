@@ -28,15 +28,10 @@ jobs:
           # OUTPUT_FOLDER: ./super-linter.report
           OUTPUT_FORMAT: tap
 
-      - name: show related files
-        run: ls -la 
-
-      - name: print README
-        run: cat *.md
-
     # Upload artifact of linting
       - name: upload linting artifact
         uses: actions/upload-artifact@v1
+        if: failure()
         with:
           name: Superlinter Report
           path: super-linter.report
