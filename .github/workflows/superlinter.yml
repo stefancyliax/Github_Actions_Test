@@ -29,10 +29,7 @@ jobs:
           OUTPUT_FORMAT: tap
 
       - name: show related files
-        run: |
-          ls -la *
-          ls -la .github
-          ls -la github
+        run: ls -la 
 
       - name: print README
         run: cat *.md
@@ -42,6 +39,6 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: Superlinter Report
-          path: super-linter.log
+          path: super-linter.report
 
 
