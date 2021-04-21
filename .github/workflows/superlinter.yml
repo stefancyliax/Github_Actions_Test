@@ -37,6 +37,6 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: Superlinter Report
-          path: super-linter.report
+          path: super-linter.log
 
 
